@@ -16,24 +16,24 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 type Props = {};
 
 function App({}: Props) {
-  const THEME = createTheme({
-    typography: {
-     "fontFamily": "Kanit",
-     "fontSize": 14,
-     "fontWeightLight": 300,
-     "fontWeightRegular": 400,
-     "fontWeightMedium": 500
-    }
- });
+//   const THEME = createTheme({
+//     typography: {
+//      "fontFamily": "Kanit",
+//      "fontSize": 14,
+//      "fontWeightLight": 300,
+//      "fontWeightRegular": 400,
+//      "fontWeightMedium": 500
+//     }
+//  });
   return (
     <>
-     <ThemeProvider theme={THEME}>
+     {/* <ThemeProvider theme={THEME}> */}
       <Routes>
           <Route index element={<Home />} />
           <Route path="/other" element={<Other />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-     </ThemeProvider>
+     {/* </ThemeProvider> */}
       
     </>
   );
