@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  margin: auto;
+  display: flex;
+  place-items: center;
+  max-width: 440px;
+  min-height: 100vh;
+  background-image: url("./assets/1.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  justify-content: center;
+  font-family: Kanit;
+}
+
+body {
+ width: 100%;
+ color: white;
+}
+
+
+.zone4:hover .popup4 {
+  opacity: 1;
+  display: block;
+  margin:0
+}
+.popup4 {
+  /* max-width: 100px; */
+  border-radius: 20px;
+  background-color: rgba(180,180,200);
+  padding: 1px 10px;
+  position: absolute;
+  transition: all 0.25s ease;
+  opacity: 0;
+  display: none;
+  animation: in-animation 0.25s ease;
+  /* margin: 0; */
+  top: 50%;
+  font-size:24px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.map {
+  background-image: url("./assets/2.png");
+  background-repeat: no-repeat;
+  background-size: 105% auto;
+  max-width: 440px;
+  background-position: center top;
+  /* background-position: center top; */
+  /* background-attachment: fixed; */
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #000;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
